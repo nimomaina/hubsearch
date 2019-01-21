@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-// import { HubService } from '../common/hub.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { HubService } from '../hub.service';
+import { Users } from '../users';
+import { Repo } from '../repo';
+// import { getResponseURL } from '@angular/http/src/http_utils';
+import { FormsModule } from '@angular/forms';
+import { Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
-  providers: [HubService],
+  providers: [HubService ],
 })
 export class SearchComponent implements OnInit {
   user: Users;
-  repos: Repository;
+  repos: Repo;
   userRepos: any;
   currentUser: string;
 
@@ -17,7 +22,7 @@ export class SearchComponent implements OnInit {
   }
  searchUser() {
 
-   this.hubService.searchUser(this.currentUser);
+   this.hubService.updateSearch(this.currentUser);
 
    this.hubService.getUserInfo();
    this.user = this.hubService.user;
@@ -29,7 +34,7 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
 
-    this.hubService.getRepoInfo(this.userName);
+    this.hubService.getRepoInfo(this.currentUser);
     this.repos = this.hubService.repo;
     this.hubService.getUserInfo();
     this.user = this.hubService.user;

@@ -1,6 +1,6 @@
 export class Users {
-  constructor(public username: string, public avatar: string, public followers: string,
-     public following: string,
+  constructor(public username: string, public image: string, public numFollowers: string,
+     public numFollowing: string,
       public repo: string, public names: string, public email: string,
-       public repo_url: string, public time: Date) {}
+       public reposite: string, public time: Date) {}
 }

@@ -1,3 +1,38 @@
-<!-- <p>
-{{ users.username}}
-</p> -->
+<div class="container">
+  <form (keyup)="searchUser()" #myForm = "ngForm">
+      <input type="text" placeholder="Search"  [(ngModel)] = "currentUser" name="currentUser" class="form-control" >
+
+  </form>
+
+
+  <div class="row">
+
+    <div class="col col-md-4">
+      <img src="{{user.image}}" alt="Github Profile Image" class="img-responsive">
+      <h2>{{user.names}}</h2>
+      <h3>{{user.email}}</h3>
+
+    </div>
+    <!-- End of profile display info -->
+
+    <div class="col col-md-2">
+      <p class="round">{{user.numFollowers}}</p>
+      <p>Followers</p>
+
+    </div>
+    <div class="col col-md-2">
+      <p class="round">{{user.numFollowing}}</p>
+      <p>Following</p>
+
+    </div>
+    <div class="col col-md-2">
+      <p class="round">{{user.repo}}</p>
+      <p>Repositories</p>
+    </div>
+    <div class="col col-md-2">
+    <button type="button" name="button" class="btn btn-success"> <a href="{{user.reposite}}">Visit Github Account</a></button>
+    <button type="button" name="button"> <a href="{{user.reposite}}" class="btn btn-primary">View all Repositories</a></button>
+    </div>
+
+  </div>
+</div>

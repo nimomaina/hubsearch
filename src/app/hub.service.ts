@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { environment } from './environments/environment';
+import { environment } from '../environments/environment';
+import { Users } from './users';
+import { Repo } from './repo';
 @Injectable({
   providedIn: 'root'
 })
 
 export class HubService {
   user: Users;
-  repo: Repository;
+  repo: Repo;
   newRepo: any;
   newUser: any;
   private currentUser: string;
@@ -16,8 +18,8 @@ export class HubService {
 
   constructor(private http: HttpClient) {
 
-    this.user = new Users ('', '', '', '', '','','','','',new Date);
-    this.repo = new Repository('', '', '');
+    this.user = new Users ('', '', '', '', '','','','',new Date);
+    this.repo = new Repo('', '', '');
     this.currentUser= 'nimomaina';
 
   }
@@ -39,20 +41,19 @@ export class HubService {
     }
 
     const promise = new Promise(((resolve, reject) => {
-      this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName +
+      this.http.get<ApiResponse>('https://api.github.com/users/' + this.currentUser +
       '?access_token=' + environment.apiUrl)
 
       .toPromise().then(response => {
-        this.user.login = response.login;
-        this.user.avatar_url = response.avatar_url;
-        this.user.followers_url = response.followers;
-        this.user.following_url = response.following;
-        this.user.repos_url = response.public_repos;
-        this.user.fname = response.name;
-        this.user.ulocation = response.location;
-        this.user.mail = response.email;
-        this.user.createdAt = response.created_at;
-        this.user.repo_url = response.html_url;
+        this.user.username = response.login;
+        this.user.image = response.avatar_url;
+        this.user.numFollowers = response.followers;
+        this.user.numFollowing = response.following;
+        this.user.repo = response.public_repos;
+        this.user.names = response.name;
+        this.user.email = response.email;
+        this.user.time = response.created_at;
+        this.user.reposite = response.html_url;
         console.log(this.user);
 
       },
@@ -76,12 +77,9 @@ export class HubService {
     }
 
     const promise = new Promise(( (resolve, reject) => {
-      this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName + '/repos?access_token=' + environment.apiUrl)
+      this.http.get<ApiResponse>('https://api.github.com/users/' + this.currentUser + '/repos?access_token=' + environment.apiUrl)
       .toPromise()
       .then(response_repo => {
-    const promise = new Promise(((resolve, reject) => {
-      this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName +
-      '?access_token=' + environment.apiUrl)
         this.newRepo = response_repo;
         // console.log(this.newRepo);
 
@@ -96,8 +94,8 @@ return promise;
   }
 
 
- updateProfile(userName: string) {
-   this.userName = userName;
+ updateSearch(userName: string) {
+   this.currentUser = userName;
  }
 
 }

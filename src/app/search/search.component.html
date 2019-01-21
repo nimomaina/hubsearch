@@ -9,6 +9,7 @@
 
     <div class="col col-md-4">
       <img src="{{user.image}}" alt="Github Profile Image" class="img-responsive">
+      <br>
       <h2>{{user.names}}</h2>
       <h3>{{user.email}}</h3>
 
@@ -16,22 +17,22 @@
     <!-- End of profile display info -->
 
     <div class="col col-md-2">
-      <p class="round">{{user.numFollowers}}</p>
-      <p>Followers</p>
+      <h2 class="round">{{user.numFollowers}}</h2>
+      <h2>Followers</h2>
 
     </div>
     <div class="col col-md-2">
-      <p class="round">{{user.numFollowing}}</p>
-      <p>Following</p>
+      <h2 class="round">{{user.numFollowing}}</h2>
+      <h2>Following</h2>
 
     </div>
     <div class="col col-md-2">
-      <p class="round">{{user.repo}}</p>
-      <p>Repositories</p>
+      <h2 class="round">{{user.repo}}</h2>
+      <h2>Repositories</h2>
     </div>
     <div class="col col-md-2">
-    <button type="button" name="button" class="btn btn-success"> <a href="{{user.reposite}}">Visit Github Account</a></button>
-    <button type="button" name="button"> <a href="{{user.reposite}}" class="btn btn-primary">View all Repositories</a></button>
+    <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">Visit Github Account</a></button>
+    <button type="button" name="button" class="btn"> <a href="{{user.reposite}}" >View all Repositories</a></button>
     </div>
 
   </div>

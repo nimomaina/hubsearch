@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+ import { HubService} from '../hub.service';
+ import { Users } from '../users'
 
 @Component({
   selector: 'app-home',

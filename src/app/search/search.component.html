@@ -5,8 +5,8 @@
   </form>
 
 
-  <div class="row">
-    <div class="Image">
+  <div class="row first-row">
+    <div class="image">
 
 
       <img src="{{user.image}}" alt="Github Profile Image" class="img-responsive">
@@ -14,30 +14,23 @@
 
 
     </div>
-    <!-- End of profile display info -->
-    <div class="">
+    <!-- End of image info -->
+    <div class="details">
 
-
-    <h2>{{user.names}}
-      <h3>{{user.email}}</h3>
-
-      <h2 class="round">{{user.numFollowers}}</h2>
-      <h2>Followers</h2>
-
-
-      <h2 class="round">{{user.numFollowing}}</h2>
-      <h2>Following</h2>
-
-
-      <h2 class="round">{{user.repo}}</h2>
-      <h2>Repositories</h2>
+      <p>{{user.names}}</p>
+      <div class="number">
+      <p>Followers <br> <span>{{user.numFollowers}}</span> </p>
+      <p>Following <br> <span>{{user.numFollowing}}</span> </p>
+      <p>Repositories <br> <span>{{user.repo}}</span></p>
       </div>
 
-  </div>
-  <div class="row">
+
+
+    </div>
+
+
     <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">Visit Github Account</a></button>
     <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">View all Repositories</a></button>
   </div>
 
-</div>
 </div>

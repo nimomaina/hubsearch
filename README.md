@@ -1,27 +1,45 @@
 # Hubsearch
+A website where Users can search Github usernames and view profiles.
+ https://nimomaina.github.io/hubsearch/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+## By Wairimu Maina
+A student at Moringa School and an aspiring software developer.
+
+## Description
+Hubsearch is a website that allows users to enter any Github username in a search bar and names matching the input will display Github profile information.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## BDD
+|------------------------||---------------||-------------------------|
+|Behaviour|Input||Output|
+|1. User views the landing page and clicks search user button||None| |Search user page |
+|2. User inputs a username on the search bar||Github Username| |Information about that username account is displayed.|
+|3. User can click the visit Github account| |Github account url| |Github Account|
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup/Installation Requirements
+* Have knowledge of Github, HTML, BOOTSTRAP, JAVASCRIPT, ANGULAR and CSS.
+* Install angular using  $ npm install -g @angular/cli
+* Git clone the repository at https://github.com/nimomaina/quotes.git
+* change the directory on your terminal to open the folder; cd quote
+* Run $ ng serve on your terminal
+* On your web browser open the link using http://localhost:4200/
 
-## Build
+## Known Bugs
+None known at the moment.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Technologies Used
+* HTML
+* Bootstrap
+* CSS
+* JavaScript
+* Angular
 
-## Running unit tests
+## Support and contact details
+Incase of clarification email me at nimomaina.nm@gmail.com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+*GLP*
+Copyright (c) 2019 **Wairimu Maina**

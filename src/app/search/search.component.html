@@ -1,7 +1,10 @@
 <div class="container">
   <form (keyup)="searchUser()" #myForm="ngForm">
-    <input type="text" placeholder="Search" [(ngModel)]="currentUser" name="currentUser" class="form-control">
+<div class="row">
 
+
+   <input type="text" placeholder="Search" [(ngModel)]="currentUser" name="currentUser" class="form-control">
+</div>
   </form>
 
 
@@ -29,9 +32,9 @@
     </div>
     <br>
     <div class="buttons">
-      <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">Visit Github Account</a></button>
-      <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">View all Repositories</a></button>
-      <p>Created On: {{user.time | date}}</p>
+      <button type="button" name="button" class="btn btn-primary"> <a href="{{user.reposite}}">Visit Github Account</a></button>
+      <button type="button" name="button" class="btn btn-primary"> <a href="{{user.reposite}}">View all Repositories</a></button>
+      <p>Created {{user.time |date }} - {{user.time | time}} days ago </p>
     </div>
 
   </div>

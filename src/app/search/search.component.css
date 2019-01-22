@@ -1,7 +1,7 @@
 .image {
   border-radius: 50%;
-  width: 100px;
-  height : 100px;
+  width: 150px;
+  height : 150px;
   float: right;
   margin-right: 50px;
   padding: 10px;
@@ -11,6 +11,8 @@
   text-align: center;
   margin: 10px;
   padding: 10px;
+  margin-left: 10%;
+  margin-top: 50px;
 
 }
  .number p {
@@ -19,20 +21,42 @@
    padding: 5px;
  }
 input{
-  width: auto;
-  margin-bottom: 10px;
+  width: 600px;
+  margin-top: 100px;
   font-size: 14px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #80ced6;
+  border-width: 2px;
+  margin-left: 20%;
+  padding: 10px;
+  height: 30px;
+  background: none;
+  background-color: none;
 }
 .first-row{
+  margin-top: 50px;
   font-size: 14px;
   border: 2px;
   width: 600px;
-  height: 200px;
+  height: 300px;
   margin-left: 20%;
   box-shadow: 5px 5px 20px #8795A1;
   text-align: center;
 }
-.button{
+.btn{
   display: inline-block;
   float: left;
+  text-decoration: none;
+  color: #fff;
+
+}
+i{
+  margin-top: 100px;
+  margin-left: -17px;
+  background: none;
+  background-color: none;
+  color: #80ced6;
+
 }

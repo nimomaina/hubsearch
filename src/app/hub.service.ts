@@ -14,7 +14,7 @@ export class HubService {
   newUser: any;
   private currentUser: string;
 
-  private accessToken = '28cece694b07fcab872674026867b5c24c798c8d';
+  // private accessToken = '28cece694b07fcab872674026867b5c24c798c8d';
 
   constructor(private http: HttpClient) {
 
@@ -81,7 +81,7 @@ export class HubService {
       .toPromise()
       .then(response_repo => {
         this.newRepo = response_repo;
-        // console.log(this.newRepo);
+
 
         resolve();
   },

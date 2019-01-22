@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { HubService } from './hub.service';
-import { HomePageComponent } from './home-page/home-page.component'
+import { HomePageComponent } from './home-page/home-page.component';
+import { TimePipe } from './time.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
     HomePageComponent,
+    TimePipe,
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { HubService } from '../hub.service';
 import { Users } from '../users';
 import { Repo } from '../repo';
-// import { getResponseURL } from '@angular/http/src/http_utils';
+
 import { FormsModule } from '@angular/forms';
 import { Injectable } from '@angular/core';
 
@@ -26,8 +26,6 @@ export class SearchComponent implements OnInit {
 
    this.hubService.getUserInfo();
    this.user = this.hubService.user;
-  // console.log(this.user);
-
    this.hubService.getRepoInfo(this.currentUser);
    this.userRepos = this.hubService.newRepo;
  }
@@ -38,7 +36,6 @@ export class SearchComponent implements OnInit {
     this.repos = this.hubService.repo;
     this.hubService.getUserInfo();
     this.user = this.hubService.user;
-    // console.log(this.profileService.repo.name);
   }
 
 }

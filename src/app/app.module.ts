@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { HubService } from './hub.service';
 import { HomePageComponent } from './home-page/home-page.component';
-import { TimePipe } from './time.pipe'
+import { TimePipe } from './time.pipe';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TimePipe } from './time.pipe'
     SearchComponent,
     HomePageComponent,
     TimePipe,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,7 @@
     <!-- End of image info -->
     <div class="details">
 
-      <p>{{user.names}}</p>
+      <p appHighlight>{{user.names}}</p>
       <div class="number">
       <p>Followers <br> <span>{{user.numFollowers}}</span> </p>
       <p>Following <br> <span>{{user.numFollowing}}</span> </p>
@@ -32,8 +32,8 @@
     </div>
     <br>
     <div class="buttons">
-      <button type="button" name="button" class="btn btn-primary"> <a href="{{user.reposite}}">Visit Github Account</a></button>
-      <button type="button" name="button" class="btn btn-primary"> <a href="{{user.reposite}}">View all Repositories</a></button>
+      <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">Visit Github Account</a></button>
+      <button type="button" name="button" class="btn "> <a href="{{user.reposite}}">View all Repositories</a></button>
       <p>Created {{user.time |date }} - {{user.time | time}} days ago </p>
     </div>
 

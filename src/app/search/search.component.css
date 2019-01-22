@@ -50,7 +50,8 @@ input{
   float: left;
   text-decoration: none;
   color: #fff;
-
+  font-size: 14px;
+  padding: 10px;
 }
 i{
   margin-top: 100px;
@@ -59,4 +60,9 @@ i{
   background-color: none;
   color: #80ced6;
 
+}
+.buttons p{
+
+  font-size: 10px;
+  font-weight: lighter;
 }

@@ -41,5 +41,5 @@ None known at the moment.
 Incase of clarification email me at nimomaina.nm@gmail.com
 
 ## License
-*GLP*
+*MIT*
 Copyright (c) 2019 **Wairimu Maina**

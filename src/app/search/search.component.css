@@ -4,6 +4,7 @@
   height : 100px;
   float: right;
   margin-right: 50px;
+  padding: 10px;
 }
 .details{
   float: left;
@@ -29,7 +30,9 @@ input{
   height: 200px;
   margin-left: 20%;
   box-shadow: 5px 5px 20px #8795A1;
-
   text-align: center;
-
+}
+.button{
+  display: inline-block;
+  float: left;
 }

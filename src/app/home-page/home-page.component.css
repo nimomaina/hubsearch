@@ -1,7 +1,28 @@
 img{
-  width: 50%;
-  height: 50%
+width: 80%;
+  height: auto;
+  padding: 10px;
+  padding-top: 30px;
 }
 .col1{
-  background-color:
+  background-color:#80ced6;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  height:100vh;
+  font-size: 14px;
+
+}
+h2{
+  font-size: 30px;
+  margin-top: 200px;
+}
+button{
+  display: inline-block;
+  margin-left: 30%;
+  width: 120px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #80ced6;
+
 }

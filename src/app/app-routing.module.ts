@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SearchComponent } from './search/search.component';
+import{ HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/details', pathMatch: 'prefix' },
+  { path: '', component: HomePageComponent },
 { path: 'search', component: SearchComponent },
 // { path: '**', component: PageNotFoundComponent }
 ];

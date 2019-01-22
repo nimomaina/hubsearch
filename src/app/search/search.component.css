@@ -14,11 +14,7 @@ img {
 
 }
 .round{
-height: 80px;
- width: 80px;
- background-color: #563f46;
- border-radius: 50%;
- display: inline-block;
+
 }
 input{
   width: 100%;

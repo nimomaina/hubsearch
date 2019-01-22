@@ -1,39 +1,43 @@
 <div class="container">
-  <form (keyup)="searchUser()" #myForm = "ngForm">
-      <input type="text" placeholder="Search"  [(ngModel)] = "currentUser" name="currentUser" class="form-control" >
+  <form (keyup)="searchUser()" #myForm="ngForm">
+    <input type="text" placeholder="Search" [(ngModel)]="currentUser" name="currentUser" class="form-control">
 
   </form>
 
 
   <div class="row">
+    <div class="Image">
 
-    <div class="col col-md-4">
+
       <img src="{{user.image}}" alt="Github Profile Image" class="img-responsive">
-      <br>
-      <h2>{{user.names}}</h2>
-      <h3>{{user.email}}</h3>
+
+
 
     </div>
     <!-- End of profile display info -->
+    <div class="">
 
-    <div class="col col-md-2">
+
+    <h2>{{user.names}}
+      <h3>{{user.email}}</h3>
+
       <h2 class="round">{{user.numFollowers}}</h2>
       <h2>Followers</h2>
 
-    </div>
-    <div class="col col-md-2">
+
       <h2 class="round">{{user.numFollowing}}</h2>
       <h2>Following</h2>
 
-    </div>
-    <div class="col col-md-2">
+
       <h2 class="round">{{user.repo}}</h2>
       <h2>Repositories</h2>
-    </div>
-    <div class="col col-md-2">
-    <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">Visit Github Account</a></button>
-    <button type="button" name="button" class="btn"> <a href="{{user.reposite}}" >View all Repositories</a></button>
-    </div>
+      </div>
 
   </div>
+  <div class="row">
+    <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">Visit Github Account</a></button>
+    <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">View all Repositories</a></button>
+  </div>
+
+</div>
 </div>

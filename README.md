@@ -23,7 +23,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 * Have knowledge of Github, HTML, BOOTSTRAP, JAVASCRIPT, ANGULAR and CSS.
 * Install angular using  $ npm install -g @angular/cli
 * Git clone the repository at https://github.com/nimomaina/hubsearch.git
-* change the directory on your terminal to open the folder; cd quote
+* change the directory on your terminal to open the folder; cd hubsearch
 * Run `$ ng serve` on your terminal
 * On your web browser open the link using http://localhost:4200/ The app will automatically reload if you change any of the source files.
 

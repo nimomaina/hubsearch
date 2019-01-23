@@ -8,7 +8,8 @@ import { SearchComponent } from './search/search.component';
 import { HubService } from './hub.service';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TimePipe } from './time.pipe';
-import { HighlightDirective } from './highlight.directive'
+import { HighlightDirective } from './highlight.directive';
+import { TimeAgoPipe} from 'time-ago-pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HighlightDirective } from './highlight.directive'
     HomePageComponent,
     TimePipe,
     HighlightDirective,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,

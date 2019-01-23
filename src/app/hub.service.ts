@@ -42,7 +42,7 @@ export class HubService {
 
     const promise = new Promise(((resolve, reject) => {
       this.http.get<ApiResponse>('https://api.github.com/users/' + this.currentUser +
-      '?access_token=' +'28cece694b07fcab872674026867b5c24c798c8d' )
+      '?access_token=' + environment.apiUrl)
 
       .toPromise().then(response => {
         this.user.username = response.login;
@@ -77,7 +77,7 @@ export class HubService {
     }
 
     const promise = new Promise(( (resolve, reject) => {
-      this.http.get<ApiResponse>('https://api.github.com/users/' + this.currentUser + '/repos?access_token=' + '28cece694b07fcab872674026867b5c24c798c8d')
+      this.http.get<ApiResponse>('https://api.github.com/users/' + this.currentUser + '/repos?access_token=' + environment.apiUrl)
       .toPromise()
       .then(response_repo => {
         this.newRepo = response_repo;

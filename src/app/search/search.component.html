@@ -34,10 +34,11 @@
     <div class="buttons">
       <button type="button" name="button" class="btn"> <a href="{{user.reposite}}">Visit Github Account</a></button>
       <button type="button" name="button" class="btn "> <a href="{{user.reposite}}">View all Repositories</a></button>
-      <p>Created {{user.time |date }} - {{user.time | time}} days ago </p>
+      <p>Created {{user.time |date }} - {{user.time| timeAgo}}  </p>
     </div>
 
   </div>
+
 
 
 </div>

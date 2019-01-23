@@ -14,7 +14,7 @@ import { Injectable } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
   user: Users;
-  repos: Repo;
+  repo: Repo;
   userRepos: any;
   currentUser: string;
 
@@ -33,7 +33,7 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
 
     this.hubService.getRepoInfo(this.currentUser);
-    this.repos = this.hubService.repo;
+    this.repo = this.hubService.repo;
     this.hubService.getUserInfo();
     this.user = this.hubService.user;
   }
